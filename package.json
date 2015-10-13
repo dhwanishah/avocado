@@ -6,12 +6,26 @@
   "dependencies": {
     "express": "^4.13.3",
     "gulp": "^3.9.0",
-    "jade": "^1.11.0"
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.2",
+    "jade": "^1.11.0",
+    "jshint-stylish": "^2.0.1",
+    "normalize.css": "^3.0.3"
   },
+  "files": [
+    "node_modules/normalize.css/"
+  ],
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dhwani Shah",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dhwanishah/avocado.git"
+  }
 }
