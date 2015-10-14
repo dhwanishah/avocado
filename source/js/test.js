@@ -1,4 +1,3 @@
-var a = "yes";
-var b = "yes";
-
-alert('y');
+$(document).ready(function(){
+      $('.slider').slider({full_width: true, indicators: false});
+    });

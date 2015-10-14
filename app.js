@@ -17,7 +17,7 @@ app.use("/", root_route);
 /* Static files path setup */
 app.use(express.static('./public'));
 
-app.listen(3000);
+app.listen(80);
 
 module.exports = app;
 

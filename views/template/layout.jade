@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+	head
+		block title
+			title= "Welcome"
+
+		// Import Normalize.css to reset
+		link(href="/css/normalize.css", rel="stylesheet")
+		// Import Google Icon Font
+		link(href='http://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Pacifico', rel='stylesheet')
+		// Import materialize.css
+		link(type='text/css', rel='stylesheet', href='/css/materialize/materialize.css', media='screen,projection')
+		// Let browser know website is optimized for mobile
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+		// Import style.css
+		link(href="/css/style.css", rel="stylesheet")
+
+	body
+		.navbar-fixed
+			nav.green
+				.nav-wrapper
+					.brand-logo.center 
+						block navBarLogo
+							| Logo
+					#pageContentTitle.left 
+						block navBarTitle
+							| foood
+
+		.slider
+			ul.slides
+				li
+					img(src="https://ununsplash.imgix.net/photo-1414849424631-8b18529a81ca?q=75&fm=jpg&s=0e993004a2f3704e8f2ad5469315ccb7")
+		
+		block content
+
+
+	footer
+		block footer
+			script(type='text/javascript', src='https://code.jquery.com/jquery-2.1.1.min.js')
+			script(type='text/javascript', src='/js/vendor/materialize/bin/materialize.min.js')
+			script(type='text/javascript', src='/js/bundle.js')
